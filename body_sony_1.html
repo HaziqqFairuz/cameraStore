@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <style type="text/css">
+      </style>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Sony Alpha 9 II full-frame (Body) | Jitra Camera Store Sdn Bhd</title>
+      <link rel="stylesheet" type="text/css" href="css/body_sony_1.css">
+   </head>
+	
+   <body>
+      <div class="container">
+         <nav>
+            <img src="img/logo.png" class="logo" title="Jitra Camera Store Sdn Bhd" alt="image not found">
+            <ul>
+               <li><a  href="index.html" >Home</a></li>
+               <li><a href="founder.html" > Founder</a></li>
+               <li><a href="about.html" > About</a></li>
+               <li><a href="contact.html" >Contact</a></li>
+               <li><a href="explore_camera.html">Buy Now</a></li>
+
+            </ul>
+            <a href="login.html" ><img src="img/profile.png" class="profile-icon" title="Profile" alt="image not found"></a> 
+            <a href="add_to_cart.html" ><img src="img/cart.png" class="cart-icon" title="Your Cart" alt="image not found" > </a>
+         </nav><br><br>
+		  
+		  <div class="wrapper">
+			  
+			  <div id="content">
+				  
+				  <div id="subwrapper">
+					  <div id="subcontent">
+                  <div id="img-zoomer-box">
+                     <img src="img/BodySony1.jpg" id="img-1" alt="Zoom Image on Mouseover"/>
+                     <div id="img-2"></div>
+                   </div>  
+                   <script src="js/scriptZoom.js"></script>
+				  </div>
+				  <div id="subcontent2">
+					  <div class="b"> Sony Alpha 9 II full-frame (Body) </div>
+						  <div class="c"> Item : #10250</div>
+					  		<div class="a"> Built for speed, reliability and productivity</div>
+					  			<div class="p"> Operability, reliability and connectivity are refined to support professional needs, including, in addition to its reliable AF, up to 20fps2 blackout-free29 continuous shooting, silent shooting capabilities30, and vibration-free Anti-distortion shutter.</div>
+					  			<div class="s"> - 35mm full frame (35.6×23.8mm), Exmor RS CMOS sensor<br>
+												- Sony E-mount lenses<br>
+												- Approx. 24.2 megapixels<br>
+												- Approx. 500 shots (Viewfinder) / approx. 690 shots (LCD monitor) (CIPA   &nbsp;&nbsp;&nbsp;&nbsp;standard)32<br>
+												- 1.3 cm (0.5 type) electronic viewfinder (color), Quad-VGA OLED<br>
+												- 7.5cm (3.0-type) type TFT<br>
+												</div>
+					  			<div class="price">  RM 16,200.00</div>
+                          <div class="toast">
+                           <div class="toast-content">
+                               <i class="fas fa-solid fa-check check"></i>
+                   
+                               <div class="message">
+                                   <span class="text text-1">Success !</span>
+                                   <span class="text text-2">Your item was added to the cart</span>
+                               </div>
+                           </div>
+                           <i class="fa-solid fa-xmark close"></i>
+                   
+                           <div class="progress"></div>
+                       </div>
+                   
+                       <button>Add To Cart</button><script>const button = document.querySelector("button"),
+      toast = document.querySelector(".toast")
+      closeIcon = document.querySelector(".close"),
+      progress = document.querySelector(".progress");
+
+      let timer1, timer2;
+
+      button.addEventListener("click", () => {
+        toast.classList.add("active");
+        progress.classList.add("active");
+
+        timer1 = setTimeout(() => {
+            toast.classList.remove("active");
+        }, 5000); //1s = 1000 milliseconds
+
+        timer2 = setTimeout(() => {
+          progress.classList.remove("active");
+        }, 5300);
+      });
+      
+      closeIcon.addEventListener("click", () => {
+        toast.classList.remove("active");
+        
+        setTimeout(() => {
+          progress.classList.remove("active");
+        }, 300);
+
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      });
+ </script>
+
+					  
+				  
+			  </div>
+		  </div>  
+      </div>
+    </div>
+	</div>
+   </body>
+</html>

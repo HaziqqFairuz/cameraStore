@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <style type="text/css">
+      </style>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>User Login</title>
+      <link rel="stylesheet" type="text/css" href="css/login.css">
+      
+   </head>
+   <body>
+      <div class="container">
+         <nav class="sticky">
+            <img src="img/logo.png" class="logo" title="Jitra Camera Store Sdn Bhd" alt="image not found">
+            <ul>
+               <li><a  href="index.html" >Home</a></li>
+               <li><a href="founder.html" style="color:white"> Founder</a></li>
+               <li><a href="about.html" style="color:white;"> About</a></li>
+               <li><a href="contact.html" >Contact</a></li>
+			   <li><a href="explore_camera.html">Buy Now</a></li>
+            </ul>
+            <a href="login.html" ><img src="img/profile.png" class="profile-icon" title="Profile" alt="image not found"></a> 
+            <a href="add_to_cart.html" ><img src="img/cart.png" class="cart-icon" title="Your Cart" alt="image not found" > </a>
+         </nav>
+         <div class="login-card">
+            <center><img src="img/LogIn.png" class="Login-Icon" title="JITRA CAMERA STORE" alt="Jcs NOT FOUND"></center>
+            <h1>User Log-in</h1><br>
+          <form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your valid Email </div>
+        
+			<div class="font font2">Password</div>
+			<input type="password" name="password" id="password">
+         <i class="bi bi-eye-slash" id="togglePassword"></i>
+			<div id="pass_error">Please fill up your valid Password</div>
+			<button type="submit">Login</button>
+		</form>
+      
+      
+         <script src="js/valid.js"></script>
+         
+          <div class="login-help">
+            <a href="register.html">Register</a> • <a href="#">Forgot Password</a>
+          </div>
+        </div>
+         
+         
+         
+         </div>
+      </div>
+   </body>
+</html>

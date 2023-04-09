@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+      <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Jitra Camera Store Sdn Bhd</title>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <script src="js/style.js"></script>
+   </head>
+   <body>
+      
+      <div class="container">
+         <div class="loader"></div>
+         <div class="popup">
+            <button id="close">&times;</button>
+            <h2>WELCOME TO JITRA CAMERA STORE</h2>
+            <p>
+               Malaysia Largest Online Camera Shop since Year 2015! Over 20,000 Products Online. Jitra Camera Store & Largest Online Camera Shop in Malaysia. Free Shipping. Since 2007.
+            </p>
+            
+        </div>
+        <script type="text/javascript">
+         window.addEventListener("load", function(){
+             setTimeout(
+                 function open(event){
+                     document.querySelector(".popup").style.display = "block";
+                 },
+                 2000 
+             )
+         });
+         
+         
+         document.querySelector("#close").addEventListener("click", function(){
+             document.querySelector(".popup").style.display = "none";
+         });
+             </script>
+             <a href="#" class="logo"><img src="img/logo.png" style="width: 200px;" alt=""></a>
+         <header>
+            
+      
+            <ul class="navbar">
+               <li><a  href="index.html"style="color:orange" >Home</a></li>
+               <li><a href="founder.html" > Founder</a></li>
+               <li><a href="about.html" > About</a></li>
+               <li><a href="contact.html" >Contact</a></li>
+			   <li><a href="explore_camera.html">Buy Now</a></li>
+            <li><a href="login.html" ><img src="img/profile.png" class="profile-icon" title="Profile" alt="image not found"></a> </li>
+            <li> <a href="add_to_cart.html" ><img src="img/cart.png" class="cart-icon" title="Your Cart" alt="image not found" > </a></li>
+            </ul>
+            
+      
+            <div class="main">
+              
+               <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+         </header>
+      
+         <!--js link--->
+         <script type="text/javascript" src="js/script.js"></script>
+         <div class="text-box">
+            <p>Welcome To</p>
+            <h1>JITRA CAMERA STORE </h1>
+            <h3>Find Your Best Camera With Us</h3>
+            <br><br><br>
+            <div class="buttonRow">
+               <a href="explore_camera.html">Explore Camera</a>
+               <a href="camera_brand.html">Camera Brand</a>
+               <a href="location.html">Location Store</a>
+            </div>
+         </div>
+         <ul class="icons">
+            <li><a href="https://wa.me/0162748214?text=Hai%20Jitra%20Camera%20Store" target="_blank"><span class="fab fa-whatsapp" title="Whatsapp"></span></a></li>
+            <li><a href="https://www.instagram.com/jitracamera_store/" target="_blank" title="Instagram"><span class="fab fa-instagram"></span></a></li>
+         </ul>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style type="text/css">
+      </style>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Checkout | Jitra Camera Store Sdn Bhd</title>
+      <link rel="stylesheet" type="text/css" href="css/checkout.css">
+   </head>
+	
+   <body>
+      <div class="container">
+         <nav>
+            <img src="img/logo.png" class="logo" title="Jitra Camera Store Sdn Bhd" alt="image not found">
+            <ul>
+               <li><a  href="index.html" >Home</a></li>
+               <li><a href="founder.html" > Founder</a></li>
+               <li><a href="about.html" > About</a></li>
+               <li><a href="contact.html" >Contact</a></li>
+               <li><a href="">Buy Now</a></li>
+            </ul>
+            <a href="login.html" ><img src="img/profile.png" class="profile-icon" title="Profile" alt="image not found"></a> 
+            <a href="add_to_cart.html" ><img src="img/cart.png" class="cart-icon" title="Your Cart" alt="image not found" > </a>
+         </nav><br><br>
+		  
+		  <div class="wrapper">
+			  <div id="subwrappertitle">
+			  <div class="titl"><strong>Check Out</strong></div>
+			  </div>
+			  <div id="content">  
+				  <div id="subwrapper">
+					  
+					  <div id="subcontent">
+						  <div class="delivery"><i style="font-size:28px; color: black" class="fa">&#xf041;</i> Delivery Address</div>
+						  <div class="mapouter">
+							  <div class="gmap_canvas" style="float: left; margin-left: 20px; border-radius: 20px;">
+								  <iframe width="1200" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=politeknik%20sultan%20abdul%20halim%20mu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+								  <a href="https://fmovies-online.net">fmovies</a><br>
+								  <style>.mapouter{position:relative;text-align:right;height:200px;width:1200px;}</style>
+								  <a href="https://www.embedgooglemap.net">embed google maps on website</a>
+								  <style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:1200px;}</style>
+							  </div>
+						  </div>
+						  <div class="hr"></div>
+						  <div class="c"> MUHAMMAD HAZIQ BIN MOHAMAD FAIRUZ<br>(+06)12-220 3908<br>Politeknik Sultan Abdul Halim Mu'adzam Shah(POLIMAS),Bandar Darulaman,06000 Jitra, Kedah Darulaman.
+						  </div>
+				  </div>
+			  </div>
+				  <div id="subwrapper2">
+					  <div id="subcontent2">
+						  <div class="delivery"><i style="font-size:25px" class="fa">&#xf283;</i> Payment Method </div>
+						  
+						  <form action="/action_page.php">
+							<select name="forma" onchange="location = this.value;" style="height: 50px; background-color:#F0FFFF ; ">
+								<option value="">--- Select your payment method ---</option>
+							 <option value="payment.html">Online Banking</option>
+							 <option value="cod.html">Cash On Delivery</option>
+							</select>
+						  </form>
+						</div>
+				  </div>
+				  <div id="subwrapper3">
+					  <div id="subcontent3">
+						  <div class="delivery"><i style="font-size:30px" class="fa fa-list-alt"></i> Order Summary </div><br>
+						  <div class="gallery">
+                     		<a target="_blank" href="img/BodySony1.jpg">
+                     		<img src="img/BodySony1.jpg" alt="image is not found" width="270" height="100%" title="Nutrilite Bio C Plus All Day Formula - 120 Tab">
+                     		</a>
+						  </div>
+						  <div class="name">Sony Alpha 9 II full-frame (Body)</div>
+						  <div class="price">RM 16,200.00</div>
+						  <div class="hr"></div>
+						  <div class="subtotal">Subtotal</div>
+						  <div class="subtotalprice">RM 16,200.00</div>
+						  <div class="subtotal">Discount</div>
+						  <div class="subtotalprice">- RM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100.00</div>
+						  <div class="subtotal">Shipping</div>
+						  <div class="subtotalprice">RM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30.00</div><br>
+						  
+						</div>
+				  </div>
+				  <div id="subwrapper4">
+					  <div id="subcontent4">
+						  <div class="totalprice">Total Price</div>
+						  <div class="totalpriceharga">RM 16,130.00</div>
+						  <section>
+							<button class="show-modal">Checkout</button>
+							<span class="overlay"></span>
+					  
+							<div class="modal-box">
+							  <i class="fa-regular fa-circle-check"></i>
+							  <h2>Completed</h2>
+							  <h3>You have sucessfully checkout the item</h3>
+					  
+							  <div class="buttons">
+								<a href="index.html"><button class="close-btn" >Close</button></a>
+								
+							  </div>
+							</div>
+						  </section>
+					  
+						  <script>
+							const section = document.querySelector("section"),
+							  overlay = document.querySelector(".overlay"),
+							  showBtn = document.querySelector(".show-modal"),
+							  closeBtn = document.querySelector(".close-btn");
+					  
+							showBtn.addEventListener("click", () => section.classList.add("active"));
+					  
+							overlay.addEventListener("click", () =>
+							  section.classList.remove("active")
+							);
+					  
+							closeBtn.addEventListener("click", () =>
+							  section.classList.remove("active")
+							);
+						  </script>
+						  
+						  </div>
+				  </div>
+		  </div>  
+
+			  
+      </div>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <style type="text/css">
+      </style>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>J.C.S Cart | Jitra Camera Store Sdn Bhd</title>
+      <link rel="stylesheet" type="text/css" href="css/add_to_cart.css">
+   </head>
+	
+   <body>
+	<script>
+		function Check(){
+		chk=document.getElementsByName("my_check")[0]
+		chk2=document.getElementsByName('check_list[]')
+		
+		if(chk.checked==true){
+		  for (i=0;i<chk2.length;i++)
+			chk2[i].checked=true
+		}else{
+		  for (i=0;i<chk2.length;i++)
+			chk2[i].checked=false
+		}
+		
+		}
+		
+		
+		</script>
+      <div class="container">
+         <nav>
+            <img src="img/logo.png" class="logo" title="Jitra Camera Store Sdn Bhd" alt="image not found">
+            <ul>
+               <li><a  href="index.html" >Home</a></li>
+               <li><a href="founder.html" > Founder</a></li>
+               <li><a href="about.html" > About</a></li>
+               <li><a href="contact.html" >Contact</a></li>
+			   <li><a href="explore_camera.html">Buy Now</a></li>
+            </ul>
+			<a href="login.html" ><img src="img/profile.png" class="profile-icon" title="Profile" alt="image not found"></a> 
+            <a href="add_to_cart.html" ><img src="img/cart.png" class="cart-icon" title="Your Cart" alt="image not found" > </a>
+         </nav><br><br>
+		  
+		  <div class="wrapper">
+			  <div id="subwrappertitle">
+			  <div class="titl"><strong>J.C.S Cart</strong></div>
+			  </div>
+			  <div id="content">  
+				  <div id="subwrapper">
+					  <div id="subcontent">
+					<form>
+					  <div class="checkboxes">
+						<label><input type="checkbox" name='my_check' value='yes' onClick=Check()></label>
+					  </div>
+					</form>
+						<div class="product"> Product</div>
+						  <div class="totalprice"> Total Price</div>
+						  <div class="quantity"> Quantity </div>
+						  <div class="unit"> Unit Price </div>
+				  </div>
+			  </div>
+				  <div id="subwrapper2">
+					  <div id="subcontent2">
+						  <form>
+					  <div class="checkboxes">
+						<label style="margin-top: 65px"><input type="checkbox" name=check_list[]> </label>
+					  </div>
+					</form>
+						  <div class="gallery">
+                     		<a  href="body_sony_1.html">
+                     		<img src="img/BodySony1.jpg" alt="image is not found" width="270" height="100%" title="Nutrilite Bio C Plus All Day Formula - 120 Tab">
+                     		</a>
+						  </div>
+						  <div class="name">Sony Alpha 9 II full-frame (Body)</div>
+						  <div class="totalprice2"> RM 16,200.00</div>
+						  
+						  <form action="/action_page.php">
+							<select id="reason" name="reason" style="height: 50px">
+								<option value="one">1</option>
+							  <option value="two">2</option>
+							  <option value="three">3</option>
+							  <option value="four">4</option>
+								<option value="five">5</option>
+								<option value="six">6</option>
+							</select>			  
+						  </form>
+						  <div class="unit" style="margin-top: 65px; margin-right: 65px; font-weight: 550; "> RM 16,200.00 </div>
+						  <div id="subwrapper3">
+						  <button class="button button4" id="check" onclick="location.href = 'checkout.html';"><span>Check Out</span></button>
+						  </div>
+						</div>
+				  </div>
+		  </div>  
+
+			  
+      </div>
+    </div>
+   </body>
+</html>

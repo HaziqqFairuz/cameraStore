@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" type="image/x-icon" href="img/FavIcon.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <style type="text/css">
+      </style>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>User Register</title>
+      <link rel="stylesheet" type="text/css" href="css/register.css">
+   </head>
+   <body>
+      <div class="container">
+         <nav class="sticky">
+            <img src="img/logo.png" class="logo" title="Jitra Camera Store Sdn Bhd" alt="image not found">
+            <ul>
+               <li><a  href="index.html" >Home</a></li>
+               <li><a href="founder.html" style="color:white"> Founder</a></li>
+               <li><a href="about.html" style="color:white;"> About</a></li>
+               <li><a href="">Contact</a></li>
+               <li><a href="">Buy Now</a></li>
+            </ul>
+            <div class="dropdown">
+                <a href="login.html" ><img src="img/profile.png" class="profile-icon" title="Profile" alt="image not found"></a>
+                <div class="dropdown-content">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                    </div>
+            </div>
+            
+            <a href="add_to_cart.html" ><img src="img/cart.png" class="cart-icon" title="Your Cart" alt="image not found" > </a>
+         </nav>
+         <div class="login-card">
+           
+            <h1>User Register</h1><br>
+          <form>
+            <input type="text" name="user" placeholder="First Name">
+            <input type="text" name="user" placeholder="Last Name">
+            <input type="text" name="user" placeholder="Email">
+            <input type="password" name="pass" placeholder="Password"> </form>
+            <div class="toast">
+               <div class="toast-content">
+                   <i class="fas fa-solid fa-check check"></i>
+       
+                   <div class="message">
+                       <span class="text text-1">Success !</span>
+                       <span class="text text-2">Your account has been created , Click Login below</span>
+                   </div>
+               </div>
+               <i class="fa-solid fa-xmark close"></i>
+       
+               <div class="progress"></div>
+           </div>
+       
+           <button>Register</button>
+           <script>const button = document.querySelector("button"),
+toast = document.querySelector(".toast")
+closeIcon = document.querySelector(".close"),
+progress = document.querySelector(".progress");
+
+let timer1, timer2;
+
+button.addEventListener("click", () => {
+toast.classList.add("active");
+progress.classList.add("active");
+
+timer1 = setTimeout(() => {
+toast.classList.remove("active");
+}, 5000); //1s = 1000 milliseconds
+
+timer2 = setTimeout(() => {
+progress.classList.remove("active");
+}, 5300);
+});
+
+closeIcon.addEventListener("click", () => {
+toast.classList.remove("active");
+
+setTimeout(() => {
+progress.classList.remove("active");
+}, 300);
+
+clearTimeout(timer1);
+clearTimeout(timer2);
+});
+</script>
+         
+            
+          <div class="login-help">
+            <a href="login.html">Login</a> • <a href="#">Forgot Password</a>
+          </div>
+        </div>
+         
+         
+         
+         </div>
+      </div>
+   </body>
+</html>
